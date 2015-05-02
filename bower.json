@@ -1,0 +1,11 @@
+{
+    "name": "galleria-gallery",
+    "version": "0.1",
+    "authors": [
+        "Pierre Rudloff <contact@rudloff.pro>"
+    ],
+    "license": "GPL3",
+    "dependencies": {
+        "galleria": "~1.4.2"
+    }
+}
