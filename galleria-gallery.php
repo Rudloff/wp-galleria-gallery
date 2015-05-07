@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Galleria Gallery
  * Description: Turn your galleries into Galleria galleries
- * Version: 0.1
+ * Version: 0.1.1
  * Author: Pierre Rudloff
  * Author URI: https://rudloff.pro/
  * License: GPL3
