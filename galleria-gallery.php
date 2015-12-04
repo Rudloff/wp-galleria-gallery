@@ -17,7 +17,8 @@
  * @link     https://github.com/Rudloff/wp-galleria-gallery
  */
 
-function galleria_scripts() {
+function galleria_scripts()
+{
     wp_enqueue_script(
         'galleria',
         plugin_dir_url(__FILE__).'/bower_components/galleria/src/galleria.js',
@@ -38,12 +39,16 @@ function galleria_scripts() {
 
 add_action('wp_enqueue_scripts', 'galleria_scripts');
 
-add_action( 'after_setup_theme', function()
-{
-    add_shortcode( 'gallery', function( $atts, $content = NULL )
-    {
-        $atts['link'] = 'file';
-        $gallery = gallery_shortcode( $atts, $content );
-        return $gallery;
-    });
-});
+add_action(
+    'after_setup_theme',
+    function () {
+        add_shortcode(
+            'gallery',
+            function ( $atts, $content = null ) {
+                $atts['link'] = 'file';
+                $gallery = gallery_shortcode($atts, $content);
+                return $gallery;
+            }
+        );
+    }
+);
